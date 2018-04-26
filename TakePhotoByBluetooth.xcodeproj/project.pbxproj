@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0F5F75ACC170A7BBB00BA8 /* Pods_TakePhotoByBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFFD77A6CBEB096972BB7A2 /* Pods_TakePhotoByBluetooth.framework */; };
+		C9038BD01EFCB2C000C5A2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9038BCF1EFCB2C000C5A2CC /* main.m */; };
+		C9038BD91EFCB2C000C5A2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9038BD71EFCB2C000C5A2CC /* Main.storyboard */; };
+		C9038BDB1EFCB2C000C5A2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9038BDA1EFCB2C000C5A2CC /* Assets.xcassets */; };
+		C9038BDE1EFCB2C000C5A2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9038BDC1EFCB2C000C5A2CC /* LaunchScreen.storyboard */; };
+		C9038BE81EFCB91D00C5A2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9038BEA1EFCB91D00C5A2CC /* InfoPlist.strings */; };
+		C983419C203017EA00C55098 /* lunch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C983419B203017E900C55098 /* lunch.jpg */; };
+		C983419E20305FA800C55098 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9038BDF1EFCB2C000C5A2CC /* Info.plist */; };
+		C9B73B1E1EFD1781006A8312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B73B1D1EFD1781006A8312 /* AppDelegate.m */; };
+		C9CF58D31EFE2B2B003D96B7 /* TBServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58D21EFE2B2B003D96B7 /* TBServiceManager.m */; };
+		C9CF58D81EFE8904003D96B7 /* TBHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58D71EFE8904003D96B7 /* TBHomeVC.m */; };
+		C9CF58E31EFE8982003D96B7 /* TBContrlolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58DB1EFE8982003D96B7 /* TBContrlolVC.m */; };
+		C9CF58E41EFE8982003D96B7 /* TBPeripheralListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58DD1EFE8982003D96B7 /* TBPeripheralListVC.m */; };
+		C9CF58E51EFE8982003D96B7 /* TBPeripheralListVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58DF1EFE8982003D96B7 /* TBPeripheralListVCCell.m */; };
+		C9CF58E61EFE8982003D96B7 /* TBTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58E21EFE8982003D96B7 /* TBTakePhotoVC.m */; };
+		C9CF58E91EFE89A8003D96B7 /* TBMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58E81EFE89A8003D96B7 /* TBMineVC.m */; };
+		C9CF58EC1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58EB1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.m */; };
+		C9CF58EF1EFE8F88003D96B7 /* LXDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58EE1EFE8F88003D96B7 /* LXDefine.m */; };
+		C9CF58F61EFE8FA4003D96B7 /* GJColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58F11EFE8FA4003D96B7 /* GJColor.m */; };
+		C9CF58F71EFE8FA4003D96B7 /* UIImageView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58F31EFE8FA4003D96B7 /* UIImageView+LX.m */; };
+		C9CF58FB1EFE9437003D96B7 /* TBGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58FA1EFE9437003D96B7 /* TBGuideVC.m */; };
+		C9CF58FF1EFEA12F003D96B7 /* TBBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58FE1EFEA12F003D96B7 /* TBBaseVC.m */; };
+		C9F937D22022C667000D3094 /* live_message@me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D12022C667000D3094 /* live_message@me.mp3 */; };
+		C9F937DB2022C673000D3094 /* videoChat_calling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D42022C672000D3094 /* videoChat_calling.mp3 */; };
+		C9F937DC2022C673000D3094 /* videoChat_show_btns.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D52022C672000D3094 /* videoChat_show_btns.mp3 */; };
+		C9F937DD2022C673000D3094 /* videoChat_connected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D62022C673000D3094 /* videoChat_connected.mp3 */; };
+		C9F937DE2022C673000D3094 /* videoChat_respond_busy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D72022C673000D3094 /* videoChat_respond_busy.mp3 */; };
+		C9F937DF2022C673000D3094 /* videoChat_hungUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9F937D82022C673000D3094 /* videoChat_hungUp.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		907837D8419B3CAB9C59013C /* Pods-TakePhotoByBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoByBluetooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth.debug.xcconfig"; sourceTree = "<group>"; };
+		AFFFD77A6CBEB096972BB7A2 /* Pods_TakePhotoByBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoByBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67C38EE1BD97144FF245E7A /* Pods-TakePhotoByBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoByBluetooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth.release.xcconfig"; sourceTree = "<group>"; };
+		C9038BCB1EFCB2C000C5A2CC /* TakePhotoByBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakePhotoByBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9038BCF1EFCB2C000C5A2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9038BD81EFCB2C000C5A2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9038BDA1EFCB2C000C5A2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9038BDD1EFCB2C000C5A2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9038BDF1EFCB2C000C5A2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9038BE51EFCB8FB00C5A2CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C9038BEE1EFCB95D00C5A2CC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C983419B203017E900C55098 /* lunch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunch.jpg; sourceTree = "<group>"; };
+		C9B73B1C1EFD1781006A8312 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9B73B1D1EFD1781006A8312 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9CF58D11EFE2B2B003D96B7 /* TBServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBServiceManager.h; sourceTree = "<group>"; };
+		C9CF58D21EFE2B2B003D96B7 /* TBServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBServiceManager.m; sourceTree = "<group>"; };
+		C9CF58D61EFE8904003D96B7 /* TBHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBHomeVC.h; sourceTree = "<group>"; };
+		C9CF58D71EFE8904003D96B7 /* TBHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBHomeVC.m; sourceTree = "<group>"; };
+		C9CF58DA1EFE8982003D96B7 /* TBContrlolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBContrlolVC.h; sourceTree = "<group>"; };
+		C9CF58DB1EFE8982003D96B7 /* TBContrlolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBContrlolVC.m; sourceTree = "<group>"; };
+		C9CF58DC1EFE8982003D96B7 /* TBPeripheralListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPeripheralListVC.h; sourceTree = "<group>"; };
+		C9CF58DD1EFE8982003D96B7 /* TBPeripheralListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPeripheralListVC.m; sourceTree = "<group>"; };
+		C9CF58DE1EFE8982003D96B7 /* TBPeripheralListVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPeripheralListVCCell.h; sourceTree = "<group>"; };
+		C9CF58DF1EFE8982003D96B7 /* TBPeripheralListVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPeripheralListVCCell.m; sourceTree = "<group>"; };
+		C9CF58E11EFE8982003D96B7 /* TBTakePhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTakePhotoVC.h; sourceTree = "<group>"; };
+		C9CF58E21EFE8982003D96B7 /* TBTakePhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTakePhotoVC.m; sourceTree = "<group>"; };
+		C9CF58E71EFE89A8003D96B7 /* TBMineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMineVC.h; sourceTree = "<group>"; };
+		C9CF58E81EFE89A8003D96B7 /* TBMineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMineVC.m; sourceTree = "<group>"; };
+		C9CF58EA1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETableViewCellBackgroundView.h; sourceTree = "<group>"; };
+		C9CF58EB1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETableViewCellBackgroundView.m; sourceTree = "<group>"; };
+		C9CF58ED1EFE8F88003D96B7 /* LXDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDefine.h; sourceTree = "<group>"; };
+		C9CF58EE1EFE8F88003D96B7 /* LXDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDefine.m; sourceTree = "<group>"; };
+		C9CF58F01EFE8FA4003D96B7 /* GJColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJColor.h; sourceTree = "<group>"; };
+		C9CF58F11EFE8FA4003D96B7 /* GJColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJColor.m; sourceTree = "<group>"; };
+		C9CF58F21EFE8FA4003D96B7 /* UIImageView+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LX.h"; sourceTree = "<group>"; };
+		C9CF58F31EFE8FA4003D96B7 /* UIImageView+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LX.m"; sourceTree = "<group>"; };
+		C9CF58F91EFE9437003D96B7 /* TBGuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBGuideVC.h; sourceTree = "<group>"; };
+		C9CF58FA1EFE9437003D96B7 /* TBGuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBGuideVC.m; sourceTree = "<group>"; };
+		C9CF58FD1EFEA12F003D96B7 /* TBBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBaseVC.h; sourceTree = "<group>"; };
+		C9CF58FE1EFEA12F003D96B7 /* TBBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBaseVC.m; sourceTree = "<group>"; };
+		C9EB1B632048D6D3001F6E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9F937D12022C667000D3094 /* live_message@me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "live_message@me.mp3"; sourceTree = "<group>"; };
+		C9F937D42022C672000D3094 /* videoChat_calling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = videoChat_calling.mp3; sourceTree = "<group>"; };
+		C9F937D52022C672000D3094 /* videoChat_show_btns.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = videoChat_show_btns.mp3; sourceTree = "<group>"; };
+		C9F937D62022C673000D3094 /* videoChat_connected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = videoChat_connected.mp3; sourceTree = "<group>"; };
+		C9F937D72022C673000D3094 /* videoChat_respond_busy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = videoChat_respond_busy.mp3; sourceTree = "<group>"; };
+		C9F937D82022C673000D3094 /* videoChat_hungUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = videoChat_hungUp.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9038BC81EFCB2C000C5A2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0F5F75ACC170A7BBB00BA8 /* Pods_TakePhotoByBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B5D436E13A549AA62646472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFD77A6CBEB096972BB7A2 /* Pods_TakePhotoByBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F5D18683C3B6CEC484DE75E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				907837D8419B3CAB9C59013C /* Pods-TakePhotoByBluetooth.debug.xcconfig */,
+				C67C38EE1BD97144FF245E7A /* Pods-TakePhotoByBluetooth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9038BC21EFCB2C000C5A2CC = {
+			isa = PBXGroup;
+			children = (
+				C9038BCD1EFCB2C000C5A2CC /* TakePhotoByBluetooth */,
+				C9038BCC1EFCB2C000C5A2CC /* Products */,
+				8F5D18683C3B6CEC484DE75E /* Pods */,
+				8B5D436E13A549AA62646472 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9038BCC1EFCB2C000C5A2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9038BCB1EFCB2C000C5A2CC /* TakePhotoByBluetooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9038BCD1EFCB2C000C5A2CC /* TakePhotoByBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				C9B73B1B1EFD1781006A8312 /* App */,
+				C9CF58FC1EFEA11D003D96B7 /* Base */,
+				C9CF58D41EFE88D3003D96B7 /* Home */,
+				C9CF58D51EFE88D3003D96B7 /* Setting */,
+				C9CF58D01EFE2B00003D96B7 /* Tools */,
+				C9F937D02022C63C000D3094 /* Resource */,
+				C9038BD71EFCB2C000C5A2CC /* Main.storyboard */,
+				C9038BDA1EFCB2C000C5A2CC /* Assets.xcassets */,
+				C9038BDC1EFCB2C000C5A2CC /* LaunchScreen.storyboard */,
+				C9038BDF1EFCB2C000C5A2CC /* Info.plist */,
+				C9038BCE1EFCB2C000C5A2CC /* Supporting Files */,
+			);
+			path = TakePhotoByBluetooth;
+			sourceTree = "<group>";
+		};
+		C9038BCE1EFCB2C000C5A2CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9038BCF1EFCB2C000C5A2CC /* main.m */,
+				C9038BE51EFCB8FB00C5A2CC /* PrefixHeader.pch */,
+				C9038BEA1EFCB91D00C5A2CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B73B1B1EFD1781006A8312 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C9B73B1C1EFD1781006A8312 /* AppDelegate.h */,
+				C9B73B1D1EFD1781006A8312 /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C9CF58D01EFE2B00003D96B7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58ED1EFE8F88003D96B7 /* LXDefine.h */,
+				C9CF58EE1EFE8F88003D96B7 /* LXDefine.m */,
+				C9CF58F01EFE8FA4003D96B7 /* GJColor.h */,
+				C9CF58F11EFE8FA4003D96B7 /* GJColor.m */,
+				C9CF58F21EFE8FA4003D96B7 /* UIImageView+LX.h */,
+				C9CF58F31EFE8FA4003D96B7 /* UIImageView+LX.m */,
+				C9CF58EA1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.h */,
+				C9CF58EB1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.m */,
+				C9CF58D11EFE2B2B003D96B7 /* TBServiceManager.h */,
+				C9CF58D21EFE2B2B003D96B7 /* TBServiceManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C9CF58D41EFE88D3003D96B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58D61EFE8904003D96B7 /* TBHomeVC.h */,
+				C9CF58D71EFE8904003D96B7 /* TBHomeVC.m */,
+				C9CF58D91EFE8982003D96B7 /* Control */,
+				C9CF58E01EFE8982003D96B7 /* TakePhoto */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9CF58D51EFE88D3003D96B7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58E71EFE89A8003D96B7 /* TBMineVC.h */,
+				C9CF58E81EFE89A8003D96B7 /* TBMineVC.m */,
+				C9CF58F91EFE9437003D96B7 /* TBGuideVC.h */,
+				C9CF58FA1EFE9437003D96B7 /* TBGuideVC.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C9CF58D91EFE8982003D96B7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58DA1EFE8982003D96B7 /* TBContrlolVC.h */,
+				C9CF58DB1EFE8982003D96B7 /* TBContrlolVC.m */,
+				C9CF58DC1EFE8982003D96B7 /* TBPeripheralListVC.h */,
+				C9CF58DD1EFE8982003D96B7 /* TBPeripheralListVC.m */,
+				C9CF58DE1EFE8982003D96B7 /* TBPeripheralListVCCell.h */,
+				C9CF58DF1EFE8982003D96B7 /* TBPeripheralListVCCell.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		C9CF58E01EFE8982003D96B7 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58E11EFE8982003D96B7 /* TBTakePhotoVC.h */,
+				C9CF58E21EFE8982003D96B7 /* TBTakePhotoVC.m */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		C9CF58FC1EFEA11D003D96B7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF58FD1EFEA12F003D96B7 /* TBBaseVC.h */,
+				C9CF58FE1EFEA12F003D96B7 /* TBBaseVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C9F937D02022C63C000D3094 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C983419B203017E900C55098 /* lunch.jpg */,
+				C9F937D42022C672000D3094 /* videoChat_calling.mp3 */,
+				C9F937D62022C673000D3094 /* videoChat_connected.mp3 */,
+				C9F937D82022C673000D3094 /* videoChat_hungUp.mp3 */,
+				C9F937D72022C673000D3094 /* videoChat_respond_busy.mp3 */,
+				C9F937D52022C672000D3094 /* videoChat_show_btns.mp3 */,
+				C9F937D12022C667000D3094 /* live_message@me.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9038BCA1EFCB2C000C5A2CC /* TakePhotoByBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9038BE21EFCB2C000C5A2CC /* Build configuration list for PBXNativeTarget "TakePhotoByBluetooth" */;
+			buildPhases = (
+				706FBA8250C4987C58B4DF66 /* [CP] Check Pods Manifest.lock */,
+				C9038BC71EFCB2C000C5A2CC /* Sources */,
+				C9038BC81EFCB2C000C5A2CC /* Frameworks */,
+				C9038BC91EFCB2C000C5A2CC /* Resources */,
+				D56D77F40DB304C2EB6E1316 /* [CP] Embed Pods Frameworks */,
+				4AA78D288930986EE39A0572 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakePhotoByBluetooth;
+			productName = TakePhotoByBluetooth;
+			productReference = C9038BCB1EFCB2C000C5A2CC /* TakePhotoByBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9038BC31EFCB2C000C5A2CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = LiXiang;
+				TargetAttributes = {
+					C9038BCA1EFCB2C000C5A2CC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3X6E22CUC7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C9038BC61EFCB2C000C5A2CC /* Build configuration list for PBXProject "TakePhotoByBluetooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = C9038BC21EFCB2C000C5A2CC;
+			productRefGroup = C9038BCC1EFCB2C000C5A2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9038BCA1EFCB2C000C5A2CC /* TakePhotoByBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9038BC91EFCB2C000C5A2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9038BDE1EFCB2C000C5A2CC /* LaunchScreen.storyboard in Resources */,
+				C9F937DF2022C673000D3094 /* videoChat_hungUp.mp3 in Resources */,
+				C9038BE81EFCB91D00C5A2CC /* InfoPlist.strings in Resources */,
+				C9F937DD2022C673000D3094 /* videoChat_connected.mp3 in Resources */,
+				C9F937DC2022C673000D3094 /* videoChat_show_btns.mp3 in Resources */,
+				C9038BDB1EFCB2C000C5A2CC /* Assets.xcassets in Resources */,
+				C9F937DB2022C673000D3094 /* videoChat_calling.mp3 in Resources */,
+				C983419C203017EA00C55098 /* lunch.jpg in Resources */,
+				C983419E20305FA800C55098 /* Info.plist in Resources */,
+				C9038BD91EFCB2C000C5A2CC /* Main.storyboard in Resources */,
+				C9F937D22022C667000D3094 /* live_message@me.mp3 in Resources */,
+				C9F937DE2022C673000D3094 /* videoChat_respond_busy.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AA78D288930986EE39A0572 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706FBA8250C4987C58B4DF66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakePhotoByBluetooth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56D77F40DB304C2EB6E1316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/RMUniversalAlert/RMUniversalAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UIActionSheet+Blocks/UIActionSheet_Blocks.framework",
+				"${BUILT_PRODUCTS_DIR}/UIAlertController+Blocks/UIAlertController_Blocks.framework",
+				"${BUILT_PRODUCTS_DIR}/UIAlertView+Blocks/UIAlertView_Blocks.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewAdditions/UIViewAdditions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMUniversalAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIActionSheet_Blocks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIAlertController_Blocks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIAlertView_Blocks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewAdditions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9038BC71EFCB2C000C5A2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CF58F71EFE8FA4003D96B7 /* UIImageView+LX.m in Sources */,
+				C9CF58F61EFE8FA4003D96B7 /* GJColor.m in Sources */,
+				C9CF58E61EFE8982003D96B7 /* TBTakePhotoVC.m in Sources */,
+				C9CF58FB1EFE9437003D96B7 /* TBGuideVC.m in Sources */,
+				C9CF58EC1EFE8E0B003D96B7 /* BETableViewCellBackgroundView.m in Sources */,
+				C9CF58D31EFE2B2B003D96B7 /* TBServiceManager.m in Sources */,
+				C9CF58E91EFE89A8003D96B7 /* TBMineVC.m in Sources */,
+				C9CF58D81EFE8904003D96B7 /* TBHomeVC.m in Sources */,
+				C9CF58FF1EFEA12F003D96B7 /* TBBaseVC.m in Sources */,
+				C9038BD01EFCB2C000C5A2CC /* main.m in Sources */,
+				C9CF58E51EFE8982003D96B7 /* TBPeripheralListVCCell.m in Sources */,
+				C9B73B1E1EFD1781006A8312 /* AppDelegate.m in Sources */,
+				C9CF58E41EFE8982003D96B7 /* TBPeripheralListVC.m in Sources */,
+				C9CF58E31EFE8982003D96B7 /* TBContrlolVC.m in Sources */,
+				C9CF58EF1EFE8F88003D96B7 /* LXDefine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9038BD71EFCB2C000C5A2CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9038BD81EFCB2C000C5A2CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9038BDC1EFCB2C000C5A2CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9038BDD1EFCB2C000C5A2CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9038BEA1EFCB91D00C5A2CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9038BEE1EFCB95D00C5A2CC /* zh-Hans */,
+				C9EB1B632048D6D3001F6E33 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9038BE01EFCB2C000C5A2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C9038BE11EFCB2C000C5A2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9038BE31EFCB2C000C5A2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907837D8419B3CAB9C59013C /* Pods-TakePhotoByBluetooth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3X6E22CUC7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TakePhotoByBluetooth/PrefixHeader.pch";
+				INFOPLIST_FILE = TakePhotoByBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiXiang.TakePhotoByBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C9038BE41EFCB2C000C5A2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67C38EE1BD97144FF245E7A /* Pods-TakePhotoByBluetooth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3X6E22CUC7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TakePhotoByBluetooth/PrefixHeader.pch";
+				INFOPLIST_FILE = TakePhotoByBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiXiang.TakePhotoByBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9038BC61EFCB2C000C5A2CC /* Build configuration list for PBXProject "TakePhotoByBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9038BE01EFCB2C000C5A2CC /* Debug */,
+				C9038BE11EFCB2C000C5A2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9038BE21EFCB2C000C5A2CC /* Build configuration list for PBXNativeTarget "TakePhotoByBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9038BE31EFCB2C000C5A2CC /* Debug */,
+				C9038BE41EFCB2C000C5A2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9038BC31EFCB2C000C5A2CC /* Project object */;
+}
