@@ -1,0 +1,52 @@
+PODS:
+  - Masonry (1.0.0)
+  - MBProgressHUD (1.2.0)
+  - RMUniversalAlert (0.8.1):
+    - RMUniversalAlert/Core (= 0.8.1)
+  - RMUniversalAlert/Core (0.8.1):
+    - "UIActionSheet+Blocks (>= 0.9)"
+    - "UIAlertController+Blocks (>= 0.9)"
+    - "UIAlertView+Blocks (>= 0.9)"
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SVProgressHUD (2.2.5)
+  - "UIActionSheet+Blocks (0.9)"
+  - "UIAlertController+Blocks (0.9.2)"
+  - "UIAlertView+Blocks (0.9)"
+  - UIViewAdditions (1.0.0)
+
+DEPENDENCIES:
+  - Masonry (= 1.0.0)
+  - MBProgressHUD (~> 1.2.0)
+  - RMUniversalAlert (~> 0.8.1)
+  - SDWebImage (~> 4.1.2)
+  - SVProgressHUD (~> 2.2.2)
+  - UIViewAdditions (~> 1.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - MBProgressHUD
+    - RMUniversalAlert
+    - SDWebImage
+    - SVProgressHUD
+    - "UIActionSheet+Blocks"
+    - "UIAlertController+Blocks"
+    - "UIAlertView+Blocks"
+    - UIViewAdditions
+
+SPEC CHECKSUMS:
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  RMUniversalAlert: ce7118101a19fa41b9adedf907b66a8cc3bd32c8
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  "UIActionSheet+Blocks": e180b7dad0a721ab7f212ac9742af799008bb358
+  "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  "UIAlertView+Blocks": a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  UIViewAdditions: b35c38dd787949168f56c429cd341a55fbaba917
+
+PODFILE CHECKSUM: e0098d19884d2c02774b9f41e9f11233c38fed0d
+
+COCOAPODS: 1.9.3

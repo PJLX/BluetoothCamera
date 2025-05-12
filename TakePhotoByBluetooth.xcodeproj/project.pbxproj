@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47D86E262D7C269800F17605 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 47D86E252D7C269800F17605 /* Podfile */; };
 		5A0F5F75ACC170A7BBB00BA8 /* Pods_TakePhotoByBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFFD77A6CBEB096972BB7A2 /* Pods_TakePhotoByBluetooth.framework */; };
 		C9038BD01EFCB2C000C5A2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9038BCF1EFCB2C000C5A2CC /* main.m */; };
 		C9038BD91EFCB2C000C5A2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9038BD71EFCB2C000C5A2CC /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		C9038BDE1EFCB2C000C5A2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9038BDC1EFCB2C000C5A2CC /* LaunchScreen.storyboard */; };
 		C9038BE81EFCB91D00C5A2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9038BEA1EFCB91D00C5A2CC /* InfoPlist.strings */; };
 		C983419C203017EA00C55098 /* lunch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C983419B203017E900C55098 /* lunch.jpg */; };
-		C983419E20305FA800C55098 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9038BDF1EFCB2C000C5A2CC /* Info.plist */; };
 		C9B73B1E1EFD1781006A8312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B73B1D1EFD1781006A8312 /* AppDelegate.m */; };
 		C9CF58D31EFE2B2B003D96B7 /* TBServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58D21EFE2B2B003D96B7 /* TBServiceManager.m */; };
 		C9CF58D81EFE8904003D96B7 /* TBHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF58D71EFE8904003D96B7 /* TBHomeVC.m */; };
@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D86E252D7C269800F17605 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		907837D8419B3CAB9C59013C /* Pods-TakePhotoByBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoByBluetooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth.debug.xcconfig"; sourceTree = "<group>"; };
 		AFFFD77A6CBEB096972BB7A2 /* Pods_TakePhotoByBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoByBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67C38EE1BD97144FF245E7A /* Pods-TakePhotoByBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoByBluetooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 				C9038BDA1EFCB2C000C5A2CC /* Assets.xcassets */,
 				C9038BDC1EFCB2C000C5A2CC /* LaunchScreen.storyboard */,
 				C9038BDF1EFCB2C000C5A2CC /* Info.plist */,
+				47D86E252D7C269800F17605 /* Podfile */,
 				C9038BCE1EFCB2C000C5A2CC /* Supporting Files */,
 			);
 			path = TakePhotoByBluetooth;
@@ -267,7 +269,6 @@
 				C9038BC81EFCB2C000C5A2CC /* Frameworks */,
 				C9038BC91EFCB2C000C5A2CC /* Resources */,
 				D56D77F40DB304C2EB6E1316 /* [CP] Embed Pods Frameworks */,
-				4AA78D288930986EE39A0572 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,12 +285,12 @@
 		C9038BC31EFCB2C000C5A2CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = LiXiang;
 				TargetAttributes = {
 					C9038BCA1EFCB2C000C5A2CC = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3X6E22CUC7;
+						DevelopmentTeam = M72ZJXFPNE;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -301,11 +302,12 @@
 			};
 			buildConfigurationList = C9038BC61EFCB2C000C5A2CC /* Build configuration list for PBXProject "TakePhotoByBluetooth" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				"zh-Hans",
+				en,
 			);
 			mainGroup = C9038BC21EFCB2C000C5A2CC;
 			productRefGroup = C9038BCC1EFCB2C000C5A2CC /* Products */;
@@ -330,7 +332,7 @@
 				C9038BDB1EFCB2C000C5A2CC /* Assets.xcassets in Resources */,
 				C9F937DB2022C673000D3094 /* videoChat_calling.mp3 in Resources */,
 				C983419C203017EA00C55098 /* lunch.jpg in Resources */,
-				C983419E20305FA800C55098 /* Info.plist in Resources */,
+				47D86E262D7C269800F17605 /* Podfile in Resources */,
 				C9038BD91EFCB2C000C5A2CC /* Main.storyboard in Resources */,
 				C9F937D22022C667000D3094 /* live_message@me.mp3 in Resources */,
 				C9F937DE2022C673000D3094 /* videoChat_respond_busy.mp3 in Resources */,
@@ -340,24 +342,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4AA78D288930986EE39A0572 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		706FBA8250C4987C58B4DF66 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +366,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RMUniversalAlert/RMUniversalAlert.framework",
@@ -407,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoByBluetooth/Pods-TakePhotoByBluetooth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -481,6 +465,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -488,8 +473,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -514,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -537,6 +524,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -544,8 +532,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -564,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -577,10 +567,10 @@
 			baseConfigurationReference = 907837D8419B3CAB9C59013C /* Pods-TakePhotoByBluetooth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3X6E22CUC7;
+				DEVELOPMENT_TEAM = M72ZJXFPNE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TakePhotoByBluetooth/PrefixHeader.pch";
 				INFOPLIST_FILE = TakePhotoByBluetooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiXiang.TakePhotoByBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -593,10 +583,10 @@
 			baseConfigurationReference = C67C38EE1BD97144FF245E7A /* Pods-TakePhotoByBluetooth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3X6E22CUC7;
+				DEVELOPMENT_TEAM = M72ZJXFPNE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TakePhotoByBluetooth/PrefixHeader.pch";
 				INFOPLIST_FILE = TakePhotoByBluetooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiXiang.TakePhotoByBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";

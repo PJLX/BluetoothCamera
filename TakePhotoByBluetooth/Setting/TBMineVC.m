@@ -95,11 +95,7 @@ SKStoreProductViewControllerDelegate
     
     //评价
     [self.evaluateView setTouchEnd:^{
-        if ([UIDevice currentDevice].systemVersion.floatValue >= 10.3) {
-            [SKStoreReviewController requestReview];
-        } else {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id1347674863?action=write-review"]];
-        }
+        [SKStoreReviewController requestReview];
     }];
     
     //下载

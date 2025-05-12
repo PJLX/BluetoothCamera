@@ -1,0 +1,6 @@
+framework module UIViewAdditions {
+  umbrella header "UIViewAdditions-umbrella.h"
+
+  export *
+  module * { export * }
+}
